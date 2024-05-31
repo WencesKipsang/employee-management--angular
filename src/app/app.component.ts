@@ -67,7 +67,7 @@ export class AppComponent implements OnInit {
       },
     });
   }
-  // for searching employees with firstname, lastname, gennder, etc
+  // for searching employees with firstname, lastname, gender, etc
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
