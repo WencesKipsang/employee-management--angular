@@ -15,7 +15,7 @@ export class EmployeeService {
     }
 
     updateEmployee(id: number, data: any): Observable<any> {
-        return this.httpClient.put(this.baseUrl + employees / ${ id }, data);
+        return this.httpClient.put(this.baseUrl + `employees / ${ id }`, data);
     }
 
     getEmployeeList(): Observable<any> {
@@ -23,6 +23,6 @@ export class EmployeeService {
     }
 
     deleteEmployee(id: number): Observable<any> {
-        return this.httpClient.delete(this.baseUrl + employees / ${ id });
+        return this.httpClient.delete(this.baseUrl + `employees / ${ id })`;
     }
 }
