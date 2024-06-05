@@ -23,6 +23,6 @@ export class EmployeeService {
     }
 
     deleteEmployee(id: number): Observable<any> {
-        return this.httpClient.delete(this.baseUrl + `employees / ${ id })`;
+        return this.httpClient.delete(this.baseUrl + `employees / ${ id }`);
     }
 }
